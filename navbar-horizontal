@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+                .navMenu i {
+			color: #a31208;
+
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #a31208;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="dashboard" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Dashboard</a>
+		<a id="stellanuit" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-clapperboard"></i> Stellanuit Ch.</a>
+		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Business</a>
+		<a id="art" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-palette"></i> Art Academy</p></a>
+		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-lightbulb"></i> Knowledge Center</p></a>
+		<a id="finances" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-1-wave"></i> Finances</a>
+		<a id="voice" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-microphone"></i> Voice Exploration</p></a>
+		<a id="travel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-passport"></i> Travel Planner</p></a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'dashboard')
+				window.open("https://www.notion.so/Welcome-Temi-baa2653699c148f2bb9074a50f4c334a?pvs=4", '_blank').focus();
+			else if (id == "stellanuit")
+				window.open("https://www.notion.so/Stellanuit-ch-5a89c0a526e5456da8a3c525e5e6ec76?pvs=4", '_blank').focus();
+			else if (id == "business")
+				window.open("https://www.notion.so/Business-c2ac40e5cfab4ac690135e5a2987a365?pvs=4", '_blank').focus();
+			else if (id == "art")
+				window.open("https://www.notion.so/Art-Academy-24383eb80dc14c82ab9f104922a9cacf?pvs=4", '_blank').focus();
+			else if (id == "knowledge")
+				window.open("https://www.notion.so/Knowledge-Center-4c339ed119bf425fad745e8acd906184?pvs=4", '_blank').focus();
+			else if (id == "finances")
+				window.open("https://www.notion.so/Finances-9c09c1c7e5f149008d8ef59bc5d9848c?pvs=4", '_blank').focus();
+			else if (id == "Voice")
+				window.open("https://www.notion.so/Voice-Exploration-2fd89db2421940a0b3c7113826963958?pvs=4", '_blank').focus();
+			else if (id == "travel")
+				window.open("https://www.notion.so/Travel-Planner-382dd934d2b84f7d812d4afaea195b40?pvs=4", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
