@@ -82,13 +82,6 @@ h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
 }
-.name{
-    
-    display:inline;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-     padding-right: 30px;
-}
 .quote{
     
     display:inline;
@@ -111,7 +104,7 @@ h1 {
   <div class="table-cell">
     
     <div class="card">
-        <div class="greet" id="greet"></div><div class="name">, Temi</div>
+        <div class="greet" id="greet">
       <div class="date" id="date"></div>
       <div class="clock">
         <div class="time" id="hour"></div>
@@ -146,11 +139,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = 'Good Morning, Temi  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = 'Good Afternoon, Temi ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = 'Good Evening, Temi  ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
