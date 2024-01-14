@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+                .navMenu i {
+			color: #a31208;
+
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #a31208;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navMenu  border" style="width: 205px;">
+		<a id="dashboard" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-database"></i> Databases</a>
+
+	</nav>
+	<nav class="navMenu  border">
+		<a id="yearly" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Yearly Goals</a>
+		<a id="monthly" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Monthly Goals</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Tasks</a>
+		<a id="habits" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> habits</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'yearly')
+				window.open("https://www.notion.so/a268a76c6c274ecdbaadecfb2bd24baa?v=a1258a295caa40e4bbf748ba9516b5cf&pvs=4", '_blank').focus();
+			else if (id == "monthly")
+				window.open("https://www.notion.so/38e49f3275e448ff9fd8b6186da0f9f3?v=a1f96f852fde4f72a58fae1e720d50e8&pvs=4", '_blank').focus();
+			else if (id == "tasks")
+				window.open("https://www.notion.so/47260d4ec9fb4edeb21c50c42f21d51d?v=a9efb774ccdf470ab424de87cb531c59&pvs=4", '_blank').focus();
+			else if (id == "habits")
+				window.open("https://www.notion.so/038bf35c133443219a8c5d3d8b47f84f?v=aee93ed8d3b54a908570b1340aae68cb&pvs=4", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
