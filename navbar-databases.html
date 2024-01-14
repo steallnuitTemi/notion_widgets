@@ -62,7 +62,7 @@
 
 <body>
 	<nav class="navMenu  border" style="width: 205px;">
-		<a id="dashboard" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-database"></i> Databases</a>
+		<a id="databases" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-database"></i> Databases</a>
 
 	</nav>
 	<nav class="navMenu  border">
@@ -83,7 +83,9 @@
 
 		function navigate(id) {
 
-			if (id == 'yearly')
+			if (id == 'databases')
+				window.open("https://www.notion.so/Databases-cdc75da86ede4a66b21e221a56a580c5?pvs=4", '_blank').focus();	
+			else if (id == "yearly")
 				window.open("https://www.notion.so/a268a76c6c274ecdbaadecfb2bd24baa?v=a1258a295caa40e4bbf748ba9516b5cf&pvs=4", '_blank').focus();
 			else if (id == "monthly")
 				window.open("https://www.notion.so/38e49f3275e448ff9fd8b6186da0f9f3?v=a1f96f852fde4f72a58fae1e720d50e8&pvs=4", '_blank').focus();
