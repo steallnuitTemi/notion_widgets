@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #a31208
+    }
+
+
+    .email:hover {
+      color: #fabc02;
+    }
+
+    .twitter:hover {
+      color: #26a7de;
+    }
+
+    .bsky:hover {
+      color: #0886fe;
+    }
+
+    .tiktok:hover {
+      color: #ff0050;
+    }
+
+    .youtube:hover {
+      color: #FF0000;
+    }
+
+    .twitch:hover {
+      color: #6441a5;
+    }
+
+    .vgen:hover {
+      color: #B8FF26;
+    }
+
+    .kofi:hover {
+      color: #13C3FF;
+    }
+
+    .throne:hover {
+      color: #fc981e;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start youtube Icon -->
+      <div id="youtube" onclick="navigate(this.id)" class="social">
+        <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+      </div>
+      <!-- End youtube Icon -->
+
+      <!-- Start twitch Icon -->
+      <div id="twitch" onclick="navigate(this.id)" class="social">
+        <span class="icon twitch"><i class="fa-brands fa-twitch"></i></span>
+      </div>
+      <!-- End twitch Icon -->
+
+      <!-- Start tiktok Icon -->
+      <div id="tiktok" onclick="navigate(this.id)" class="social">
+        <span class="icon tiktok"><i class="fab fa-tiktok"></i></span>
+      </div>
+      <!-- End tiktok Icon -->
+
+      <!-- Start twitter Icon -->
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+      </div>
+      <!-- End twitter Icon -->
+
+      <!-- Start bsky Icon -->
+      <div id="bsky" onclick="navigate(this.id)" class="social">
+        <span class="icon bsky"><i class="fa-solid fa-cloud-moon"></i></span>
+      </div>
+      <!-- End bsky Icon -->
+
+      <!-- Start vgen Icon -->
+      <div id="vgen" onclick="navigate(this.id)" class="social">
+        <span class="icon vgen"><i class="fa-solid fa-palette"></i></span>
+      </div>
+      <!-- End vgen Icon -->
+
+      <!-- Start kofi Icon -->
+      <div id="kofi" onclick="navigate(this.id)" class="social">
+        <span class="icon kofi"><i class="fa-solid fa-mug-hot"></i></span>
+      </div>
+      <!-- End kofi Icon -->
+
+      <!-- Start throne Icon -->
+      <div id="throne" onclick="navigate(this.id)" class="social">
+        <span class="icon throne"><i class="fa-solid fa-crown"></i></span>
+      </div>
+      <!-- End throne Icon -->
+
+      <!-- Start email Icon -->
+      <div id="email" onclick="navigate(this.id)" class="social">
+        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <!-- End email Icon -->
+
+
+    </div>
+
+
+
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "blog")
+          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "email") {
+          window.open("mailto:stellanuit.temi@gmail.com", '_blank').focus(); //Add your email after "mailto:""
+        }
+
+        else if (id === "twitter") {
+          window.open("https://twitter.com/stellanuitTemi", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "tiktok") {
+          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
+        }
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/@stellanuitTemi", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "twitch") {
+          window.open("https://www.twitch.tv/stellanuittemi", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "vgen") {
+          window.open("https://vgen.co/stellanuitTemi", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "bsky") {
+          window.open("https://bsky.app/profile/stellanuittemi.bsky.social", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "kofi") {
+          window.open("https://ko-fi.com/stellanuittemi", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "throne") {
+          window.open("https://throne.com/stellanuittemi", '_blank').focus(); //Add the url to your youtube account
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
