@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: 197px;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+                .navMenu i {
+			color: #a31208;
+
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #a31208;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navMenu  border" style="width: 197px;">
+		<a id="databases" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-database"></i> Databases</a>
+
+	</nav>
+	<nav class="navMenu  border">
+		<a id="bank" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Bank Accounts</a>
+		<a id="income" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Incomes</a>
+		<a id="budget" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Budget Expending</a>
+		<a id="subs" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Subscriptions</a>
+                <a id="expenses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Expenses</a>
+                <a id="month" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Monthly<br><p style="padding-left:25px>Overview</p></a>
+                <a id="year" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Yearly<br><p style="padding-left:25px>Overview</p></a>
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'databases')
+				window.open("https://www.notion.so/Finances-DB-dafc3c0e6ef840e39f604ff41e77d307?pvs=4", '_blank').focus();	
+			else if (id == "bank")
+				window.open("https://www.notion.so/8ecd4bc5bfa8431cb02893eaa2825786?v=89374a4f97a345dc96981c620a07870d&pvs=4", '_blank').focus();
+			else if (id == "income")
+				window.open("https://www.notion.so/b1e7949eba8748328e7745927297aaaf?v=ce702f4f02084a15aac8d0023600bfa3&pvs=4", '_blank').focus();
+			else if (id == "budget")
+				window.open("https://www.notion.so/5723208363cd4372bcf62250121e215e?v=85775fda94c1406fb448bc177abbd521&pvs=4", '_blank').focus();
+			else if (id == "subs")
+				window.open("https://www.notion.so/7926dcfecf8a457387da678f051998d0?v=92075b89a2ea4e8d9d94b958adc2149b&pvs=4", '_blank').focus();
+			else if (id == "expenses")
+				window.open("https://www.notion.so/5f7dd70fda8e4f3b999ee3d5a4fbcbe1?v=4becacb11ef343a490c12138fbf98c5e&pvs=4", '_blank').focus();
+			else if (id == "month")
+				window.open("https://www.notion.so/293734d4a6bd408b99efee8a024ff931?v=309b87f34f79449f92619d734fc25031&pvs=4", '_blank').focus();
+			else if (id == "year")
+				window.open("https://www.notion.so/5f8b89a183d349a9b60cc56945e7f5f5?v=7547e5caccf64c70a45305db73a9484e&pvs=4", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
